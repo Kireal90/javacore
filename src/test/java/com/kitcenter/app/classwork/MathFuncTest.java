@@ -1,13 +1,23 @@
 package com.kitcenter.app.classwork;
 
 import com.kitcenter.app.classwork.lesson5.MathFunc;
-        import org.junit.Assert;
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
+import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 public class MathFuncTest {
-    @Test // JUnit framework annotation
-    public void multiplyTest() {
-        int a = 1, b = 2, expRes = 2;
-        Assert.assertEquals(expRes, MathFunc.multiply(a, b));
-    }
+
+//    @RunWith(JUnitParamsRunner.class)
+//    public class DataProviderMathFunctionsTest {
+//        @Test
+//        @FileParameters(value = "src/test/resources/testdata.csv", mapper = CsvWithHeaderMapper.class)
+//        public void dataProviderTestAdd (int argA, int argB, int expOut) {
+//            int actOut = Math.multiplyExact(argA, argB);
+//            Assert.assertEquals(expOut, actOut);
+//        }
+//    }
+
 }
