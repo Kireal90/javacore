@@ -5,8 +5,8 @@ public class ArrayLesson7Runner {
 
     public static void main(String[] args) {
         ArrayLesson7 arraysCreator = new ArrayLesson7();
-//        arraysCreator.evenNumbersPrintGorizontally();
-//        arraysCreator.evenNumbersPrintGorizontally();
+//        arraysCreator.evenNumbersPrintHorizontally();
+//        arraysCreator.evenNumbersPrintVertically();
 //        arraysCreator.oddPrint1to99();
 //        arraysCreator.random0to9inMass15();
 //        arraysCreator.random0to999inMass15();

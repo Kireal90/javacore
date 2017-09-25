@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class ArrayLesson7 {
-    public void evenNumbersPrintGorizontally() {
+    public void evenNumbersPrintHorizontally() {
         int[] mass = new int[20 / 2];
         for (int i = 0, j = 2; i < mass.length; i++, j += 2) {
             mass[i] = j;
@@ -108,6 +108,7 @@ public class ArrayLesson7 {
                     finalResult+=tempResult;
                 }
                 System.out.print("result:"+finalResult);
+                exit = false;
                 }
             }
     }
