@@ -31,17 +31,6 @@ public class CircleArea {
 
         double circleAreaTwo;
         circleAreaTwo = 3.14*r2*r2;
-
-        //System.out.println("Area is "+circleArea);
-//    }
-//    public static void calculateBigger(){
-        //System.out.println("Aera 1: ");
-        //Scanner scannerArea = new Scanner(System.in);
-        //double area1 = scannerArea.nextDouble();
-        //System.out.println("Aera 2: ");
-        //Scanner scannerArea2 = new Scanner(System.in);
-        //double area2 = scannerArea2.nextDouble();
-
         if ((r1 > r2) || (circleAreaOne > circleAreaTwo)){
             System.out.print("Area1 is bigger");
             System.out.print("Area2 is smaller");
@@ -49,13 +38,6 @@ public class CircleArea {
             System.out.print("Area2 is bigger");
             System.out.print("Area1 is smaller");
         }
-
-
-//        if (area1 > area2) {
-//            System.out.print("Area 1 is bigger");
-//        } else if (area1 == area2) {
-//            System.out.print("Areas are equel");
-//        } else { System.out.print("Area 2 is bigger");}
         }
     }
 

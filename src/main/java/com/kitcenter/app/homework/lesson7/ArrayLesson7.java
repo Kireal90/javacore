@@ -5,21 +5,23 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class ArrayLesson7 {
-    public void evenNumbersPrintHorizontally() {
+    public static void evenNumbersPrintHorizontally() {
         int[] mass = new int[20 / 2];
         for (int i = 0, j = 2; i < mass.length; i++, j += 2) {
             mass[i] = j;
             System.out.print(mass[i] + " ");
         }
     }
-    public void evenNumbersPrintVertically() {
+    public static void evenNumbersPrintVertically() {
         int[] mass = new int[20 / 2];
-        for (int i = 0; i < mass.length; i++) {
+        for (int i = 0, j = 2; i < mass.length; i++, j += 2) {
+            mass[i] = j;
             System.out.print("\n" + mass[i]);
         }
     }
-    public void oddPrint1to99() {
+    public static void oddPrint1to99() {
         int[] mass = new int[100 / 2];
         for (int i = 0, j = 1; i < mass.length; i++, j += 2) {
             mass[i] = j;
@@ -29,14 +31,14 @@ public class ArrayLesson7 {
             System.out.println(mass[counter]);
         }
     }
-    public void random0to9inMass15() {
+    public static void random0to9inMass15() {
         int[] mass = new int[15];
         for (int i = 0; i < mass.length; i++) {
             mass[i] = (int) (Math.random() * 10);
         }
         System.out.println(Arrays.toString(mass));
     }
-    public void random0to999inMass15() {
+    public static void random0to999inMass15() {
         int[] mass = new int[15];
         for (int i = 0; i < mass.length; i++) {
             mass[i] = (int) (Math.random() * 1000);
@@ -60,7 +62,7 @@ public class ArrayLesson7 {
         }
         System.out.println("Min number: " + min);
     }
-    public void twoDimMassWithRand() {
+    public static void twoDimMassWithRand() {
         int[][] mass = new int[8][5];
         Random rand = new Random();
         for (int i = 0; i < mass.length; i++) {
@@ -74,7 +76,7 @@ public class ArrayLesson7 {
             }
         }
     }
-    public void twoDimMassRandFrom1to999() {
+    public static void twoDimMassRandFrom1to999() {
         int[][] mass = new int[8][5];
         Random rand = new Random();
         for (int i = 0; i < mass.length; i++) {
@@ -88,11 +90,10 @@ public class ArrayLesson7 {
             }
         }
     }
-    public void askValuesForSum() {
+    public static void askValuesForSum(Scanner scannerOne) {
         boolean exit = true;
         int[] nums = new int[10];
-        Scanner scannerOne = new Scanner(System.in);
-        System.out.println("Введите ряд чисел c вводом по одному через Enter:"+"\n"+"Ввод должен прерываться словом \"exit\"");
+        System.out.println("Введите ряд чисел c вводом по одному через Enter:\n"+"Ввод должен прерываться словом \"exit\"");
         while (exit) {
             try {
                 for (int i = 0; i < 10; i++) {
@@ -109,8 +110,7 @@ public class ArrayLesson7 {
                 }
                 System.out.print("result:"+finalResult);
                 exit = false;
-                }
             }
+        }
     }
 }
-

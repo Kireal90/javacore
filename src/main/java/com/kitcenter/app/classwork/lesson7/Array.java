@@ -10,12 +10,9 @@ public class Array {
         int [] a = new int[10];
         for (int i = 0; i<a.length; i++){
             a[i]=i;
-//            System.out.println("a["+a[i]+"]"+"="+i);
         }
         int counter = 0;
         for (int forEach : a) {
-
-//            System.out.println("a["+a[counter]+"]"+"="+forEach);
             counter++;
         }
         System.out.println(Arrays.toString(a));
