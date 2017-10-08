@@ -1,5 +1,7 @@
 package com.kitcenter.runners.classwork.lesson10;
 
+import com.kitcenter.app.classwork.lesson10.Lesson10;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,8 +13,10 @@ public class Lesson10Runner {
 
     public static void main(String[] args) {
         BufferedReader reader = null;
+        Lesson10 getPath = new Lesson10();
+        String filePath = getPath.getFilePath("inputClasswork.txt");
         try {
-            reader = new BufferedReader(new FileReader("E:\\input.txt"));
+            reader = new BufferedReader(new FileReader(filePath));
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
