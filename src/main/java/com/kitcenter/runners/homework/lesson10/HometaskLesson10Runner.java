@@ -7,13 +7,13 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class Lesson10Runner {
+public class HometaskLesson10Runner {
     public static void main(String[] args) {
         Lesson10 les10 = new Lesson10();
         System.out.println("Choose method:\n" +
                 "1: readWriteFile\n" +
                 "2: readAndCheckPolin\n" +
-                "3: userTypesStringToFIle\n");
+                "3: userTypesStringToFile\n");
         Scanner chooseMethod = new Scanner(System.in);
         int methodNumber = chooseMethod.nextInt();
         try {
