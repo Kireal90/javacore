@@ -1,6 +1,7 @@
 package com.kitcenter.runners.classwork.lesson12;
 
 import com.kitcenter.app.classwork.lesson12.Bicycle;
+import com.kitcenter.app.classwork.lesson12.Person;
 import com.kitcenter.app.classwork.lesson12.Student;
 import com.kitcenter.app.classwork.lesson12.Teacher;
 
@@ -16,6 +17,7 @@ public class Lesson12ClassworkRunner {
         stud.welcomePerson();
         Teacher teacher = new Teacher("Mr.Black");
         teacher.getTeacherName();
+
     }
 }
 
