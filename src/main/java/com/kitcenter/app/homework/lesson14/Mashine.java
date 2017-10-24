@@ -8,6 +8,8 @@ public abstract class Mashine implements Run{
     String transportName;
     int currentSpeed;
 
-//    Mаshinе (String name, int speed){};
+//    Mаshinе (String transportName, int currentSpeed);
 
-}
+    }
+
+
