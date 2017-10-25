@@ -18,6 +18,7 @@ public class HometaskLesson15CelebrityRunner {
             cel = (Celebrity) newSet.toArray()[ newSet.size()-1 ];
 
             System.out.println(cel);
+            System.out.println("Guess age?");
             Scanner sc = new Scanner(System.in);
             int art = sc.nextInt();
 
